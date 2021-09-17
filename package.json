@@ -1,7 +1,11 @@
 {
-  "name": "crithal-productos",
+  "name": "cristhal-productos",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Alejo Taliento",
+    "url": "https://github.com/alejotaliento"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
