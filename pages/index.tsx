@@ -2,8 +2,8 @@ import { Button } from "@chakra-ui/button";
 import { Grid, Link, Stack, Text, Flex } from "@chakra-ui/layout";
 import { GetStaticProps } from "next";
 import React from "react";
-import api from "./product/api";
-import { Product } from "./product/types";
+import api from "../product/api";
+import { Product } from "../product/types";
 
 interface Props {
   products: Product[];
