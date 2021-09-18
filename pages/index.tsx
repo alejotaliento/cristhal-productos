@@ -73,16 +73,19 @@ const IndexRoute: React.FC<Props> = ({ products }) => {
               <Button
                 colorScheme="primary"
                 onClick={() => setCart((cart) => cart.concat(product))}
-                variant="outline"
               >
                 Agregar
               </Button>
             </Stack>
           ))}
         </Grid>
+        <AnimatePresence></AnimatePresence>
         {Boolean(cart.length) && (
           <Flex
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
             position="sticky"
+            as={motion.div}
             bottom={4}
             alignItems="center"
             justifyContent="center"
@@ -105,7 +108,8 @@ const IndexRoute: React.FC<Props> = ({ products }) => {
             key="backdrop"
             alignItems="center"
             as={motion.div}
-            backgroundColor="rgba(0,0,0,5)"
+            draggable="true"
+            backgroundColor="rgba(0,0,0,0.5)"
             justifyContent="center"
             layoutId={selectedImage}
             position="fixed"
@@ -113,6 +117,7 @@ const IndexRoute: React.FC<Props> = ({ products }) => {
             left={0}
             height="100%"
             width="100%"
+            onClick={() => setSelectedImage(null)}
           >
             <Image key="image" src={selectedImage} alt="SelectedImage"></Image>
           </Flex>

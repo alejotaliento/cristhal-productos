@@ -2,7 +2,7 @@ import { extendTheme, theme } from "@chakra-ui/react";
 
 export default extendTheme({
     colors: {
-        primary: theme.colors["teal"],
+        primary: theme.colors["gray"],
     },
     styles: {
         global: {
@@ -10,5 +10,6 @@ export default extendTheme({
                 backgroundColor: "primary.50",
             }
         }
+
     }
 })
