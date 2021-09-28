@@ -1,15 +1,16 @@
 import { extendTheme, theme } from "@chakra-ui/react";
 
-export default extendTheme({
-    colors: {
-        primary: theme.colors["gray"],
-    },
-    styles: {
-        global: {
-            body: {
-                backgroundColor: "primary.50",
-            }
-        }
+import { INFORMATION } from "./app/constants";
 
-    }
-})
+export default extendTheme({
+  colors: {
+    primary: theme.colors[INFORMATION.color],
+  },
+  styles: {
+    global: {
+      body: {
+        backgroundColor: "primary.50",
+      },
+    },
+  },
+});
