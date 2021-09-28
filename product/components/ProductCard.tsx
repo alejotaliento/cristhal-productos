@@ -1,7 +1,7 @@
 import React from "react";
 import { Stack, Button, Text } from "@chakra-ui/react";
 
-import { parseCurrency } from "../../utils/currency";
+import { parseCurrency } from "../../utils";
 import { Product } from "../types";
 
 interface Props {

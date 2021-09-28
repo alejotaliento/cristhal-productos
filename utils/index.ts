@@ -10,3 +10,13 @@ export const OptimizeImageURL = (src: string, width: number, quality = 20) => {
 
   return `https://img2.storyblok.com/${width}x0/filters:quality(${quality}):format(webp)/${src}`;
 };
+
+/*
+/ Formateador de number a PESOS argentinos
+/*/
+export function parseCurrency(value: number): string {
+  return new Intl.NumberFormat("es-AR", {
+    style: "currency",
+    currency: "ARS",
+  }).format(value);
+}
