@@ -70,5 +70,6 @@ module.exports = {
     "react/display-name": ["off", "always"],
     "react/prop-types": ["warn", {}],
     "no-debugger": "warn",
+    "no-unused-vars": ["off", {}],
   },
 };
