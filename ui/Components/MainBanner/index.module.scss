@@ -1,0 +1,47 @@
+.root {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    text-align: left;
+    max-width: 1600px;
+    position: relative;
+}
+
+.principalText {
+    font-size: 30px;
+    margin-top: 20px;
+    line-height: 1.2;
+
+    p {
+        margin: 0;
+    }
+
+    @media only screen and (min-width: 560px) {
+        font-size: 32px;
+    }
+
+    @media only screen and (min-width: 850px) {
+        font-size: 35px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 40px;
+    }
+}
+
+.secondaryText {
+    padding: 0;
+    margin-block: 24px;
+    font-size: 15px;
+    font-weight: 300;
+
+    p {
+        margin: 0;
+    }
+
+    @media only screen and (min-width: 560px) {
+        font-size: 20px;
+    }
+}

@@ -3,7 +3,7 @@ import { Flex, Stack, Container, Text, Divider } from "@chakra-ui/react";
 
 import styles from "./index.module.scss";
 
-type Section = {
+export type Section = {
   title: string;
   description: string;
 };
