@@ -43,7 +43,7 @@ const StoreScreen: React.FC<Props> = ({ products }) => {
 
   return (
     <>
-      <Stack spacing={6}>
+      <Stack justifyContent="center" minHeight="50vh" spacing={6}>
         {products.length ? (
           <Grid gridGap={6} templateColumns="repeat(auto-fill, minmax(240px, 1fr))">
             {products.map((product) => (
